@@ -1,1 +1,1 @@
-web: gunicorn devsearch.wsgi --timeout 18000 --log-file -
+web: python manage.py migrate && python manage.py qcluster
